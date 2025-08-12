@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+<title>My First Javascipt</title>
+<style>
+    button {
+    background-color: rgb(25, 18, 122);
+    color: #fff;
+    border-radius: 30px;
+    height: 30px;
+    width: 150px;
+    margin: 0 20px;}
+</style>
+</head>
+<body>
+    <h1 id='title'>Hello Javascipt</h1>
+    <button type='button' id='btn'>Click Me!</button>
+    <button type='button' id='btn2'>원래색으로 되돌리기</button>
+    <a href="#">A tag</a>
+    <script>
+        const h1 = document.getElementById('title')
+        const btn = document.getElementById('btn')
+        const btn2 = document.getElementById('btn2')
+        h1.style.color = 'pink';
+
+        btn.addEventListener('click',()=>
+        {h1.style.color = 'purple';} )
+        btn2.addEventListener('click',()=>
+        {h1.style.color = 'pink';} )
+       
+    </script>
+</body>
+</html>

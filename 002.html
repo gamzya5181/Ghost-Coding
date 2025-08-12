@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Javascipt</title>
+    <title>Inherit(상속)속성알아보기</title>
+    <style>
+     div {color: red;}
+     h1 {color: blue;}
+     div span:nth-Child(4) {color: olive;}
+     h2:first-child{color: red;}
+     h3:nth-child(2){color: yellow;}
+    </style>
 </head>
 <body>
-    <h1 id="title">Hello Javascipt</h1>
-    <button type="button" id="btn">Click Me!</button>
-    
-    <script>
-        const h1 = document.getElementById('title')
-        const btn = document.getElementById('btn')
-        h1.style.color = 'pink';
-        btn.addEventListener('click',()=>{
-            h1.style.color = 'purple';
-        } )
-    </script>
+    <article>
+        <h2>apple</h2>
+        <h3>mango</h3>
+        <h4>banana</h4>
+        <h5>melon</h5>
+        <h6>tomato</h6>
+    </article>
+    <div class="Parent"> 
+        Parent
+        <span>Child Span</span>
+        <h1> Heading Element - child</h1>
+        <p class="child">
+            Child Element
+            <span class="Grand-child">Grand-child</span></p>
+            <span>Child Span2</span>
+            <span>Child Span3</span>
+    </div>
 </body>
 </html>
