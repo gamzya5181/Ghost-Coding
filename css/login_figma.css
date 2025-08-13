@@ -1,0 +1,55 @@
+@charset "UTF-8";
+body {background-color: #2c2c2c;
+      color: #fff;
+      font-style: inherit;}
+.all-container 
+         {  outline: 1px solid gold;
+            margin: 200px auto 0;
+            display: flex;
+            width: 100vw;       /* 화면 전체 너비 */
+            height: 100vh;      /* 화면 전체 높이 */
+            flex-direction: column; /* 메인축으로 정렬 */
+            justify-content: space-between; /* 교차축으로 정렬 */
+            align-items: center;
+            gap: 120px;
+            min-width: 272px;
+            width: calc(100% - 100px );
+            max-width: 400px; 
+            padding: 200px 0 70px;
+            margin: 0 auto;}
+   
+.slogan-container img {
+                      width: 100%;
+                      margin-bottom: 38px;}
+                     
+ p {width: 272px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 45%;}
+
+ .link-container { 
+  display: flex;
+  flex-direction: column; /* 세로 배치 */
+  align-items: center;    /* 가운데 정렬 */
+  gap: 20px;              /* 버튼 간 간격 */}
+   
+ .link-container a{ width: 100%;
+                    height: 42px;
+                    display: flex;
+                    flex-direction: center;
+                    align-items: center; 
+                    font-size: 20px;
+                    font-weight: bold;
+                    letter-spacing: -0.4px;
+                    line-height: 1; }  
+  .link-container a:first-child {
+            
+  }         
+  .link-container a:last-child {
+           
+  }                     
+  .link-container a:hover{
+    color: gold;
+  }
