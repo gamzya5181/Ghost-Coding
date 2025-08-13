@@ -1,0 +1,12 @@
+@charset "UTF-8";
+body {background-color: #2c2c2c;
+      color: #fff;
+      font-style: inherit;}
+.box{ 
+            width: 375px;
+            height: 812px;
+            padding :20px;
+            border: #2c2c2c;
+            box-sizing: border-box;
+        }
+img {}
