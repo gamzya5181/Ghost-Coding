@@ -42,12 +42,8 @@
         cardBox.classList.toggle('horizon-box')
         let status = cardBox.classList.contains('horizon-box');
         console.log('현재상태는 : ',status, '입니다.')
-        if (status) {
-        btn.textContent = '세로모드 보기'
-        } 
-        else {
-          btn.textContent = '가로모드 보기'
-        }
+        if (status) {btn.textContent = '세로모드 보기'} 
+        else {btn.textContent = '가로모드 보기'}
         })
     </script>
 </body>
