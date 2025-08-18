@@ -28,4 +28,13 @@
         ul,ol{
           list-style: none;
         }
-      
+
+        table{
+         border-spacing: 0;
+         border-collapse: collapse;
+        }
+
+        td{
+          border: 1px solid #c8c8c8;
+          padding: 12px;
+        }
