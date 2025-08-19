@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0819_02</title>
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<style>
+    .tbox{
+        max-width: 800px;
+        width: 100%;
+        margin: 50px auto;
+    }
+    .tbox th[scope="col"]{
+        background-color: rgb(238, 237, 218);
+    }
+    .tbox th[scope="row"]{
+        background-color: rgb(213, 213, 212);
+    }
+    .tbox td{
+        text-align: center;
+    }
+</style>
+
+<body>
+    <table class="tbox">
+    <caption>성적표</caption>
+    <colgroup>
+        <col style="width: 240px;">
+        <col style="width: cale((100%-240px)/3)" span="3">
+    </colgroup>
+     <thead>  
+        <!-- td태그가 있으면 안된다. -->
+        <tr>
+            <th scope="col">이름</th>
+            <th scope="col">언어</th>
+            <th scope="col">수학</th>
+            <th scope="col">영어</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th scope="row">average</th>
+            <td>70</td>
+            <td>70</td>
+            <td>70</td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <th scope="row">김지경</th>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <th scope="row">손석구</th>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <th scope="row">탄지로</th>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+    </tbody>
+    
+    </table>
+</body>
+</html>
