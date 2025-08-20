@@ -3,8 +3,8 @@
 body {font-size: 14px;
       background-color: #fff;
       font-family: sans-serif;
-      
 }
+
 .card-container{
     width: 100%;
     max-width: 360px;
@@ -14,20 +14,35 @@ body {font-size: 14px;
 }
 
 .card-container .thumb { 
+    background-color: rgb(235, 235, 235);
     height: 200px;
     overflow: hidden;
     border-radius: 12px 12px 0 0;
+    position: relative;
 }
+
 .card-container .thumb img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
-.card-container .contents{
+
+.card-container.dimm{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card-container .contents {
+    background-color: #fff;
     padding: 12px;
     border-radius: 0 0 12px 12px ;
+    position: relative;
 }
+
 .contents strong{
     font-size: 1.5em;
     color: #488ADA;
@@ -35,7 +50,6 @@ body {font-size: 14px;
 
 .card-container .contents p{
     margin: 1.02em 0;
-    font-size: 10px;
     color: rgba(0, 0, 0, 0.5);
     text-align: justify;
 }
@@ -54,15 +68,80 @@ body {font-size: 14px;
     padding: 0 12px;
     border-radius: 30px;
     align-items: center;
-    
 }
 
 .card-container .tag-container a:hover{
 
-background-color: rgba(0, 0, 0, 0.7);
+background-color: rgba(0, 0, 0, 0.4);
 }
 
 .card-container .tag-container a::before{
     content: "#";
     margin: 0 4px 0 0;
+}
+
+.card-container .btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: teal;
+    translate: 0 -50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.card-container .btn:hover{
+    rotate: -45deg;
+    scale: 1.1;
+     /* transform: scale(1.1) rotate(-45deg); */
+}
+
+.card-container .btn img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+body{
+    height: 2000px;
+}
+.top-btn{
+    background-color: tomato;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+}
+
+.dimm{
+    position: fixed;
+    inset: 0 0 0 0;  
+    /* 상 하 좌 우 */
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0; */
+    z-index: 100;
+    
+    
+}
+.modal {
+    z-index: 101;
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background-color: gold;
+    /* left: calc(50%-150px);
+    top: calc(50%-150px); */
+    left: 50%;
+    top: 50%;
+    /* inset: 50% auto auto 50% */
+    translate: -50% -50%;
+    /* transform : translate(-50%. -50%); */
 }
