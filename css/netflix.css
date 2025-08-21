@@ -188,14 +188,14 @@ body::before {
 
 /* now-content */
 
-.now-content {
+.now-content{
   max-width: 1200px;      /* 전체 최대 너비 */
   margin: 40px auto;      /* 가운데 정렬 + 위아래 여백 */
   padding: 20px;          /* 내부 여백 */
-  color: #fff;            /* 텍스트 색상 흰색 */
 }
 
-.now-content h3 {
+.now-content h3,
+.join-reasons h3{
   font-size: 28px;        /* 제목 크기 */
   margin-bottom: 20px;    /* 제목과 리스트 사이 간격 */
 }
@@ -217,7 +217,6 @@ body::before {
 
 .content-list img {
   width: 100%;           
-  aspect-ratio: 2 / 3;   /* 비율 고정: 포스터 느낌 */
   object-fit: cover;     
   border-radius: 12px;
   display: block;
@@ -236,4 +235,67 @@ body::before {
   z-index: 1;          
   
 }
+
+.content-list li:hover{
+  scale: 1.1;
+}
+
+.join-reasons{ 
+  max-width: 1200px;      /* 전체 최대 너비 */
+  margin: 40px auto;      /* 가운데 정렬 + 위아래 여백 */
+  padding: 20px;          /* 내부 여백 */     /* 가운데 정렬 + 위아래 여백 */
+}
+
+.reason-container{
+  max-width: 1200px;      /* 전체 최대 너비 */
+  margin: 40px auto;      /* 가운데 정렬 + 위아래 여백 */
+  
+}
+
+.reason-container ol{
+  display: flex;          /* 가로 정렬 */
+  gap: 10px;              /* 아이템 간 간격 */
+  list-style: none;       /* 기본 숫자 제거 */
+  padding: 0;
+  margin: 0;
+}
+
+
+.reason-container li {
+  width: 100%;
+  height: 200px;
+  max-height: 300px;
+  overflow: hidden;
+  padding: 24px;
+  background: linear-gradient(91deg, #261733, #151a3f);
+  border-radius: 20px;
+  /* (전체 100% - 간격 4칸) ÷ 5장 */
+  flex: 0 0 calc((100% - (10px * 4)) / 4);
+  position: relative;
+}
+
+
+.join-reasons img{
+       width: 30px;
+       background-color : #ffffff;
+       border-radius: 10px;
+       position: absolute;
+       bottom: 20px;
+       right: 20px;
+}
+
+
+.join-reasons h4{
+       font-size: 16px;
+       margin-bottom: 10px;
+       font-weight:600;
+}
+
+.join-reasons p{
+       font-size: 12px;
+       color: #555555;
+
+}
+
+
 

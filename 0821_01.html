@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/reset.css" rel="stylesheet">
+    <style>
+    body{
+        margin: auto;
+    }
+
+    .search-container{
+        display: flex;
+        border-radius: 16px;
+        margin: 50px auto;
+        padding: 20px;
+        width: 400px;
+        height: 220px;
+        background-color: rgb(226, 244, 254);
+        box-shadow: #696868;
+
+        position: relative;
+    }
+    Fieldset{
+        display: flex;
+        flex-direction: column; 
+        width: 360px;
+        height: auto;
+        text-align: center;
+        gap: 20px; 
+        }
+    
+
+    input, button{
+        width: 100%;
+        border-radius: 16px;
+
+    }
+    input{
+        display: flex;
+        align-items: flex-start;
+        font-size: 20px;
+        border: 2px solid rgb(196, 196, 196);
+        padding: 20px 70px;
+        background-image:url(./images/icons/search_gr.svg);
+        background-repeat: no-repeat;
+    }
+
+
+    button{
+        width: 100%;
+        background-color: rgb(196, 196, 196);
+        color: #fff;
+        padding: 20px;
+        border-radius: 20px;
+        font-size: 20px;
+
+    }
+    a { 
+        position: absolute;
+        bottom:14px;
+        right: 24px;
+    
+    }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+
+    <form>
+    <!-- 어떤 기능하는지 설명 -->
+    <Fieldset>
+        <legend>검색</legend>
+        <input type="search" 
+        placeholder="검색어를 입력하세요" 
+        required>
+        <button type="submit">Search</button>
+    
+    </Fieldset>
+    </form>
+
+    <a href="./searchResult.html">Advanced Search</a>
+
+   </div>
+</body> 
+</html>
