@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+    <p>아래에서 좋아하는 과목을 모두 선택하세요</p>
+
+    <!-- 명시적인 레이블/ 접근성이 가장 좋음 -->
+    <input type="checkbox" id="subject_1" name="subject">
+    <lable for="subject_1">html</lable><br>
+
+    <input type="checkbox"id="subject_2" name="subject">
+    <lable for="subject_2">css</lable><br>
+
+    <input type="checkbox"id="subject_3" name="subject">
+    <lable for="subject_3">javascript</lable>
+
+    <p>자동로그인 설정하기</p>
+    <!-- 암묵적인 레이블 -->
+    <label><input type="checkbox">자동로그인</label>
+
+    <!-- 명시적인 레이블 -->
+    <input type="checkbox" id="autologin">
+    <lable for="autologin">자동로그인</lable>
+
+    <p>평가를 해주세요</p>
+    <!-- radio name 없으면 기능이 실행되지 않음. -->
+    <lable><input type="radio" name="judgement">좋아요</lable>
+    <label><input type="radio" name="judgement">싫어요</label>
+  
+    <p>성별을 선택해주세요</p>
+    <lable>
+        <input type="radio" name="gender" value="man">
+        <span>남</span>
+    </lable>
+    <lable>
+        <input type="radio" name="gender" checked value="woman">
+        <span>여</span>
+    </lable>
+    <lable>
+        <input type="radio" name="gender" value="etc">
+        <span>기타</span>
+    </lable>
+
+    <p>메모를 남겨주세요</p>
+    <label><input type="text" name="memo" placeholder="메모를 입력하세요"></label>
+</body>
+</html>

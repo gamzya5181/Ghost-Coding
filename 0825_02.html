@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naver form</title>
+</head>
+<body>
+    <h1> 
+        <a href="#">NAVER</a>
+    </h1>
+    
+    <input tyep="text" placeholder="과목선택"
+     list="campus-subject">
+    <datalist id="campus-subject">
+      <option>html</option>
+      <option>css</option>
+      <option>javascript</option>
+    </datalist>
+
+    <!-- select 태그에서는 반드시 옵션태그 종료 -->
+    <datalist id="campus-subject2">
+      <option value="html">
+      <option value="css">
+      <option value="javascript">
+        
+    </datalist>
+
+
+    <form name="auth">
+    <input type="checkbox" name="login">실명 인증된 아이디로 가입<br>
+
+    <label><input type="text" name="login" placeholder="아이디" required>@naver.com</label><br>
+    
+    <label><input type="password" name="login" placeholder="비밀번호" required></label>
+    <label><button type ="button">비밀번호 숨기기</button> </label><br>
+
+
+    <label><input type="text" name="login" placeholder="[선택] 이메일 주소 (비밀번호)"></label>
+    <strong>아이디: 필수정보 입니다.</strong><br>
+
+    <label><input type="text" name="login" placeholder="이름" required></label><br>
+
+    <label><input type="text" name="login" placeholder="생년월일 8자리" maxlength="8" required></label>
+    <button type="button">통신사선택</button>
+    <input type="button" value="통신사선택">
+
+    <ul>
+        <li>
+        <input type="radio" name="gender" value="man">
+        <span>남</span>
+        <input type="radio" name="gender" checked value="woman">
+        <span>여</span>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+        <input type="radio" name="" value="">
+        <span>내국인</span>
+        <input type="radio" name="" checked value="">
+        <span>외국인</span>
+        </li>
+    </ul>
+     
+    <button type="submit" disabled>인증요청</button>
+     <input type="submit" value="인증요청">
+    </form>
+</body>
+</html>

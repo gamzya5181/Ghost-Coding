@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+   .terms-container{
+    height: 150px;
+    overflow-y: auto ;
+    overflow-x: hidden;
+    border: 1px solid red;
+    width: 100%;
+    max-width: 250px;
+    padding: 1opx;
+    border-radius: 12px;}
+
+    .terms-container p{
+        line-height: 1;
+        font-size: 12px;
+        text-align: justify;
+    }
+    </style>
+</head>
+<body>
+    <select name="">
+        <optgroup label="서울시">
+            <option>구로구</option>
+            <option>강서구</option>
+        </optgroup>
+        <optgroup label="제주시">
+            <option>구로구</option>
+            <option>강서구</option>
+        </optgroup>
+        <optgroup label="경상북도">
+            <option></option>
+            <option>강서구</option>
+        </optgroup>
+
+        
+    </select>
+
+    <textarea readonly disabled>
+            다양한 네이버 서비스를 즐겨보세요.
+            <a href="http://www.naber.com"
+            target="_blank">
+            www.naver.com
+        </a>
+        </textarea>
+        <hr>
+
+        <div class="phone-check">
+        <input type="tel"
+        required placeholder="-없이 숫자만 입력해주세요">
+        <button type="button"disabled>인증요청</button>
+        <hr>
+        <input type="text" disabled 
+        placeholder="인증번호 6자리">
+        </div>
+
+        <label for="disk_c">Disk usage C:</label>
+        <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+
+        <label for="disk_d">Disk usage D:</label>
+        <meter id="disk_d" value="0.6">60%</meter>
+
+        <div class="terms-container">
+            <h3>다양한 네이버 서비스를 즐겨보세요.</h3>
+            <a href="http://www.naber.com"
+            target="_blank">
+            www.naver.com
+            </a>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui sapiente cum     tempora placeat minus, culpa numquam ex, iure laboriosam dolorem magni necessitatibus dignissimos tenetur natus vero rem, aliquid excepturi esse!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui sapiente cum tempora placeat minus, culpa numquam ex, iure laboriosam dolorem magni necessitatibus dignissimos tenetur natus vero rem, aliquid excepturi esse!
+            </p>
+        </div>
+</body>
+</body>
+</html>
