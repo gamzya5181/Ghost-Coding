@@ -200,7 +200,10 @@ body::before {
   font-size: 28px;        /* 제목 크기 */
   margin-bottom: 20px;    /* 제목과 리스트 사이 간격 */
 }
-
+.content-list{
+  overflow-y: hidden;
+  overflow-x: auto;
+}
 /* 콘텐츠 목록을 가로로 배치 */
 .content-list ol {
   display: flex;          /* 가로 정렬 */

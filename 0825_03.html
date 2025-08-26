@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .container{
+             background-color: gold;
+             margin: 0px auto;
+             width: 300px;
+             height: 300px;
+             position: relative 
+            
+             /* position:static (기본값) offset 속성 적용불가
+
+               * offset 속성: left top right botton *
+                position:relative (무조건 나를 기준으로)
+                position:absolute (z축으로 떠 있는 요소)
+                position:fixed (바디기준으로 고정)
+                position:sticky*/
+        
+             
+        }
+        .ghost1{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .ghost2{
+            position: fixed;
+            right: 40px;
+            bottom: 40px;
+        }
+
+        p{
+            background-color: tomato;
+        }
+
+        .child-container{
+            width: 200px;
+            height: 200px;
+            background: url('./images/card_thumb_0.jpg') no-repeat center center;
+            background-color: olive;
+            position: relative 
+        }
+
+    .container button{
+        width: 50px;
+        height: 50px;
+        background-color: rgb(222, 134, 35);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        border-radius: 50px;
+        color: #fff;
+        top: 50%;
+    }
+    .container .prev{ 
+        left: 0;
+        translate: -50% -50%;
+     }
+    .container .next{
+         right: 0;
+         translate: 50% -50%;
+        }
+
+    .child-container:hover .full{
+        background-color:rgba(rgb(101, 105, 155), green, blue, 0.5);
+    }   
+
+    .full{
+          background-color: rgba(rgb(101, 105, 155), green, blue, 0);
+          position: absolute ;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child-container">
+             <img src="./images/ghost_n1.png" alt="" class="ghost1">
+             <img src="./images/ghost_n2.png" alt="" class="ghost2">
+             <div class="full">hello</div>
+        </div>
+         <button type="button" class="prev">이전</button>
+         <button type="button" class="next">다음</button>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et quos sapiente sit maxime similique dolorem molestiae illo animi unde ab, delectus sint amet, necessitatibus perspiciatis excepturi magnam aliquid placeat dolore.</p>
+</body>
+</html>
